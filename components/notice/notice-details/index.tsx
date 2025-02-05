@@ -32,7 +32,7 @@ export default function NoticeDetails({ notice }: NoticeDetailsProps) {
         <RichText content={notice.content.raw} />
         <span>{`Publicado por: ${notice.author.name}, dia ${format(
           new Date(notice.date),
-          "MM/dd/yyyy"
+          "dd/MM/yyyy"
         )}`}</span>
         <p>Boas informações produzem bons negócios!</p>
       </motion.div>

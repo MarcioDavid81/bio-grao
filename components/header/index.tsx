@@ -1,5 +1,6 @@
 "use client";
 
+import logo from "../../public/logoB.png"
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
@@ -67,7 +68,7 @@ export default function Header() {
     >
       <div className="container flex justify-between items-center">
         <Image
-          src="/logoB.png"
+          src={logo}
           alt="Logo"
           width={140}
           height={340}

@@ -9,7 +9,7 @@ import { Typewriter } from 'react-simple-typewriter'
 export default function Hero() {
   return (
     <>
-      <div className="relative flex items-center  h-screen overflow-hidden z-10 bg-green-400 hero">
+      <div className="relative flex items-center  h-screen overflow-hidden z-10 bg-secondary hero">
         <div className="container flex flex-col items-center sm:items-start gap-4 z-10">
           <h3 className="text-4xl sm:text-[65px] font-extrabold font-Exo leading-[60px]">
             O seu sucesso é{" "}
