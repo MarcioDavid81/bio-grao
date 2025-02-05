@@ -27,7 +27,7 @@ export default function NoticeCard({ notice }: NoticeCardProps) {
         </Badge>
         <div className="flex items-center mb-4 gap-2">
           <CalendarDays size={14} />
-          <p className="text-xs font-extralight">{format(new Date(notice.date), "MM/dd/yyyy")}</p>
+          <p className="text-xs font-extralight">{format(new Date(notice.date), "dd/MM/yyyy")}</p>
         </div>
         <strong className="font-medium text-lg text-zinc-700">
           {notice.title}
