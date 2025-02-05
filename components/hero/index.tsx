@@ -41,6 +41,7 @@ export default function Hero() {
             </Link>
           </div>
         </div>
+    
         <video
           autoPlay
           muted

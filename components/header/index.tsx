@@ -62,8 +62,8 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 bg-primary sm:bg-transparent transition-all duration-300
-        ${scrolled ? "bg-primary sm:bg-primary sm:rounded-br-full shadow-md transition-all" : ""}`}
+      className={`fixed top-0 left-0 right-0 z-50 bg-primary sm:bg-secondary transition-all duration-300
+        ${scrolled && "bg-primary sm:bg-primary sm:rounded-br-[100px] shadow-md"}`}
     >
       <div className="container flex justify-between items-center">
         <Image
@@ -102,8 +102,8 @@ export default function Header() {
                 <a
                   href={page.url}
                   className={`${
-                    path === page.url ? "text-secondary" : ""
-                  } hover:text-secondary`}
+                    path === page.url ? "text-primary" : ""
+                  } hover:text-primary`}
                 >
                   {page.name}
                 </a>
@@ -113,8 +113,8 @@ export default function Header() {
         </nav>
         {/* MENU MOBILE */}
         <nav
-          className={`fixed right-0 bg-secondary/100 top-[73px] w-[70%] h-screen z-20 transform transition-transform duration-300
-            ${isMenuMobileOpen ? "translate-x-0" : "translate-x-full"}`}
+          className={`fixed right-0 bg-secondary/100 top-[73px] w-[70%] h-screen z-20 transform transition-transform duration-300 ${isMenuMobileOpen ? "translate-x-0" : "translate-x-full"}`}
+          onClick={() => setIsMenuMobileOpen(false)}
         >
           <ul className="flex flex-col items-start justify-start h-full gap-6 pl-4 pt-4 text-xl font-Exo text-white">
             {pages.map((page) => (
