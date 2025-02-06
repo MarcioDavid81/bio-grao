@@ -12,6 +12,8 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary: #85AC1C;
+    --secondary: #2B3089;
   }
 }
 
@@ -41,6 +43,7 @@ h3 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  align-items: center;
 }
 
 @keyframes animate {
@@ -56,4 +59,17 @@ h3 {
   75% {
       background-image: url('/photo4.jpg');
   }
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--secondary);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 14px;
 }
