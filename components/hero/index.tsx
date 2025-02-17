@@ -42,14 +42,14 @@ export default function Hero() {
           </div>
         </div>
         {/* <img src="/photo1.jpg" alt="herophoto" className='absolute object-cover z-0 w-full h-full opacity-80' /> */}
-        {/* <video
+        <video
           autoPlay
           muted
           loop
           className="absolute object-cover z-0 w-full h-full opacity-80"
         >
           <source src="/hero.mp4" type="video/mp4" />
-        </video> */}
+        </video>
       </div>
     </>
   )

@@ -36,7 +36,7 @@ h3 {
   padding: 1rem;
 }
 
-.hero{
+/* .hero{
   width: 100%;
   height: 100vh;
   animation: animate 30s ease-in-out infinite;
@@ -59,7 +59,7 @@ h3 {
   75% {
       background-image: url('/photo4.jpg');
   }
-}
+} */
 
 *::-webkit-scrollbar {
   width: 10px;
