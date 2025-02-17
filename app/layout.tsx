@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import Footer from "@/components/footer";
+import PriceTicker from "@/components/price-ticker";
 
 const exo = Exo({
   variable: "--font-exo",
@@ -33,6 +34,7 @@ export default function RootLayout({
         className={`${exo.variable} antialiased`}
       >
         <Header />
+        <PriceTicker />
         <Hero />
         {children}
         <Footer />
