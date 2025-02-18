@@ -1,4 +1,5 @@
 import React from 'react'
+import AboutCard from './_components/about-card';
 
 export const metadata = {
   title: "Sobre",
@@ -6,8 +7,6 @@ export const metadata = {
 
 export default function About() {
   return (
-    <div className="container flex items-center justify-center h-screen">
-    <h1>Seja bem vindo ao About</h1>
-  </div>
+    <AboutCard />
   )
 }
