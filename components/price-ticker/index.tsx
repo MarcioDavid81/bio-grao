@@ -16,7 +16,7 @@ const getPriceData = async (): Promise<Prices> => {
 `;
   return fetchHygraphQuery(
     query,
-    60 * 60 * 24 // 24 hours
+    60
   );
 };
 

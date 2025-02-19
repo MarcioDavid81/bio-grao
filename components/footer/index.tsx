@@ -75,7 +75,7 @@ export default function Footer() {
               <p className="text-xs sm:text-sm">{`© ${year} All rights reserved.`}</p>
             </div>
             <div>
-              <a href="http://localhost:3000/privacy-politic" className="text-xs sm:text-sm">
+              <a href="/privacy-politic" className="text-xs sm:text-sm">
                 Políticas de Privacidade
               </a>
             </div>
