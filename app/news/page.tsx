@@ -48,7 +48,7 @@ export default async function News() {
 
 
   return (
-    <div className="container items-center justify-between py-5">
+    <div className="container items-center justify-between py-10">
       <SectionTitle subtitle="notícias" title="Fique bem informado"/>
       <NoticesList notices={posts} />
     </div>

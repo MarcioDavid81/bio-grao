@@ -63,8 +63,8 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 bg-primary sm:bg-secondary/90 transition-all duration-300
-        ${scrolled && "bg-primary sm:bg-secondary/90 shadow-md"}`}
+      className={`fixed top-0 left-0 right-0 z-50 bg-primary sm:bg-secondary transition-all duration-300
+        ${scrolled && "bg-primary sm:bg-secondary shadow-md"}`}
     >
       <div className="container flex justify-between items-center">
         <Image

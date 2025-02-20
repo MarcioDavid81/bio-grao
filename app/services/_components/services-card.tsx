@@ -3,19 +3,21 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
+import SectionTitle from '@/components/section-title';
 
 export default function ServicesCard() {
   return (
+    <div className="container">
+        <SectionTitle title="Nossos Serviços" subtitle="o que oferecemos" />
     <section id="services" className="py-20">
-      <div className="container mx-auto px-4">
+      <div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center max-w-3xl mx-auto mb-16"
+          className="text-start mb-16"
         >
-          <h2 className="text-3xl font-bold mb-6">Nossos Serviços</h2>
           <p className="text-gray-600 text-lg">
             Oferecemos soluções completas para o recebimento e comercialização de grãos,
             com foco na qualidade e satisfação dos nossos clientes.
@@ -60,5 +62,6 @@ export default function ServicesCard() {
         </div>
       </div>
     </section>
+    </div>
   )
 }

@@ -7,6 +7,9 @@ export const metadata = {
 
 export default function Services() {
   return (
-    <ServicesCard />
+    <div className='flex items-center justify-center py-10 h-full'>
+      <ServicesCard />
+    </div>
+
   )
 }
