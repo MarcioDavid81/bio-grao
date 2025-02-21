@@ -14,12 +14,12 @@ export default function MarqueeBanner() {
     <section className=" container mx-auto px-4 py-12">
         <SectionTitle title="Parceiros" subtitle="o que há de melhor" />
         <Marquee autoFill={true} pauseOnHover={true} className='flex items-center justify-between py-10 h-full'>
-            <Image src={Or} alt="Or Melhoramento Genético" width={50} height={100} className='sm:w-[100px]' />
-            <Image src={Brasmax} alt="Brasmax Genético" width={50} height={100} className='sm:w-[100px]' />
-            <Image src={Dekalb} alt="Dekalb Sementes" width={50} height={100} className='sm:w-[100px]' />
-            <Image src={Basf} alt="Basf" width={50} height={100} className='sm:w-[100px]' />
-            <Image src={Sthil} alt="Sthil" width={50} height={100} className='ml-2 mr-5 sm:w-[100px]' />
-            <Image src={Syngenta} alt="Syngenta" width={50} height={100} className='sm:w-[100px]' />
+            <Image src={Or} alt="Or Melhoramento Genético" width={100} height={100} />
+            <Image src={Brasmax} alt="Brasmax Genético" width={100} height={100} />
+            <Image src={Dekalb} alt="Dekalb Sementes" width={100} height={100} />
+            <Image src={Basf} alt="Basf" width={100} height={100} />
+            <Image src={Sthil} alt="Sthil" width={100} height={100} className='ml-2 mr-5' />
+            <Image src={Syngenta} alt="Syngenta" width={100} height={100} />
         </Marquee>
     </section>
   )
