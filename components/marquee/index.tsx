@@ -14,10 +14,17 @@ import Mosaic from '../../public/marquee/mosaic.png';
 import Nortox from '../../public/marquee/nortox.png';
 import Piratini from '../../public/marquee/piratini.png';
 import UPL from '../../public/marquee/upl.png';
+import DM from '../../public/marquee/dm.png';
+import HO from '../../public/marquee/ho.png';
+import TMG from '../../public/marquee/tmg.png';
+
 
 const images = [
   { src: Or, alt: "Or Melhoramento Genético" },
   { src: Brasmax, alt: "Brasmax Genético" },
+  { src: DM, alt: "Dom Mario" },
+  { src: HO, alt: "HO Genética" },
+  { src: TMG, alt: "Tropical Melhoraento e Genética" },
   { src: Dekalb, alt: "Dekalb Sementes" },
   { src: Basf, alt: "Basf" },
   { src: Sthil, alt: "Sthil" },
