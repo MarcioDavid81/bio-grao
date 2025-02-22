@@ -2,6 +2,7 @@ import { Price } from "@/app/types/price";
 import { format } from "date-fns";
 import React from "react";
 import Marquee from "react-fast-marquee";
+import { Asterisk } from "lucide-react";
 
 type PricesListProps = {
   prices: Price[];
@@ -33,6 +34,9 @@ export default function PriceList({ prices }: PricesListProps) {
             </span>
           </div>
         ))}
+        <span>
+          <Asterisk size={20} className="ml-10" />
+        </span>
         </Marquee>
       </div>
     </div>
