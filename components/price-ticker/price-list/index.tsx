@@ -19,7 +19,7 @@ export default function PriceList({ prices }: PricesListProps) {
   const formattedDate = format(today, "dd/MM/yyyy");
 
   return (
-    <div className="bg-black text-white overflow-hidden mt-[72px] py-0">
+    <div className="bg-black text-white overflow-hidden py-0">
       <div className="container flex mx-auto space-x-20 text-sm gap-10">
         <Marquee autoFill={true} pauseOnHover={true} gradient={true} gradientWidth={2} gradientColor="lime" className="rounded-full" >
         <h2 className="ml-10">Cotações de hoje {formattedDate}</h2>

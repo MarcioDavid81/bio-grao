@@ -63,8 +63,8 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 bg-primary sm:bg-secondary transition-all duration-300
-        ${scrolled && "bg-primary sm:bg-secondary shadow-md"}`}
+      className={`fixed top-0 left-0 w-full z-50 bg-primary sm:bg-transparent transition-all duration-300
+        ${scrolled ? "md:bg-secondary md:shadow-md" : ""}`}
     >
       <div className="container flex justify-between items-center">
         <Image
@@ -78,19 +78,19 @@ export default function Header() {
           <IoClose
             onClick={() => setIsMenuMobileOpen(false)}
             size={40}
-            className="text-secondary cursor-pointer hidden max-md:block"
+            className="text-primary cursor-pointer hidden max-md:block z-30"
           />
         ) : (
           <IoMenu
             size={40}
-            className="text-secondary cursor-pointer hidden max-md:block"
+            className="text-secondary cursor-pointer hidden max-md:block z-10"
             onClick={() => setIsMenuMobileOpen(true)}
           />
         )}
         {/* DIV CEGA PARA CRIAR O EFEITO DE OPACIDADE DO BODY */}
         {isMenuMobileOpen && (
           <div
-            className="fixed inset-0 bg-primary bg-opacity-75 top-[73px] z-10"
+            className="fixed inset-0 bg-primary bg-opacity-75 top-0 z-[9]"
             data-open={isMenuMobileOpen}
             onClick={() => setIsMenuMobileOpen(false)}
           />
@@ -114,10 +114,10 @@ export default function Header() {
         </nav>
         {/* MENU MOBILE */}
         <nav
-          className={`fixed right-0 bg-secondary/100 top-[73px] w-[70%] h-screen z-20 transform transition-transform duration-300 ${isMenuMobileOpen ? "translate-x-0" : "translate-x-full"}`}
+          className={`fixed right-0 bg-secondary/100 top-0 w-[70%] h-screen z-20 transform transition-transform duration-300 ${isMenuMobileOpen ? "translate-x-0" : "translate-x-full"}`}
           onClick={() => setIsMenuMobileOpen(false)}
         >
-          <ul className="flex flex-col items-start justify-start h-full gap-6 pl-4 pt-4 text-xl font-Exo text-white">
+          <ul className="flex flex-col items-start justify-start h-full gap-6 pl-4 pt-20 text-xl font-Exo text-white">
             {pages.map((page) => (
               <li key={page.url}>
                 <a

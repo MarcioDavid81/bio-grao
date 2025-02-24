@@ -34,8 +34,8 @@ export default function RootLayout({
         className={`${exo.variable} antialiased`}
       >
         <Header />
-        <PriceTicker />
         <Hero />
+        <PriceTicker />
         {children}
         <Footer />
       </body>

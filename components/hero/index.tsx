@@ -46,9 +46,10 @@ export default function Hero() {
           autoPlay
           muted
           loop
-          className="absolute object-cover z-0 w-full h-full opacity-80"
+          className="absolute top-0 object-cover z-0 w-full h-full opacity-80"
+          poster="https://lirp.cdn-website.com/bc3b92af/dms3rep/multi/opt/ymVNfZf9Rga1a1YnNZrO_Video+Home.v2.0000000-1920w.jpg"
         >
-          <source src="/hero.mp4" type="video/mp4" />
+          <source src="https://vid.cdn-website.com/bc3b92af/videos/ymVNfZf9Rga1a1YnNZrO_Video+Home-v.mp4" type="video/mp4" />
         </video>
       </div>
     </>
