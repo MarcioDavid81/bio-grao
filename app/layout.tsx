@@ -5,6 +5,7 @@ import Header from "@/components/header";
 import Hero from "@/components/hero";
 import Footer from "@/components/footer";
 import PriceTicker from "@/components/price-ticker";
+import GetPrices from "@/components/get-prices";
 
 const exo = Exo({
   variable: "--font-exo",
@@ -18,10 +19,10 @@ export const metadata: Metadata = {
   },
   icons: [
     {
-      url: "/logoB.png"
-    }
-  ]
-}
+      url: "/logoB.png",
+    },
+  ],
+};
 
 export default function RootLayout({
   children,
@@ -30,12 +31,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body
-        className={`${exo.variable} antialiased`}
-      >
+      <body className={`${exo.variable} antialiased`}>
         <Header />
         <Hero />
         <PriceTicker />
+        <GetPrices />
         {children}
         <Footer />
       </body>

@@ -26,15 +26,15 @@ const images = [
   { src: HO, alt: "HO Genética" },
   { src: TMG, alt: "Tropical Melhoraento e Genética" },
   { src: Dekalb, alt: "Dekalb Sementes" },
-  { src: Basf, alt: "Basf" },
   { src: Sthil, alt: "Sthil" },
+  { src: Basf, alt: "Basf" },
   { src: Syngenta, alt: "Syngenta" },
   { src: Adama, alt: "Adama" },
   { src: Ihara, alt: "Ihara" },
-  { src: Mosaic, alt: "Mosaic" },
-  { src: Nortox, alt: "Nortox" },
-  { src: Piratini, alt: "Piratini" },
   { src: UPL, alt: "UPL" },
+  { src: Nortox, alt: "Nortox" },
+  { src: Mosaic, alt: "Mosaic" },
+  { src: Piratini, alt: "Piratini" },
 ]
 
 export default function MarqueeBanner() {
