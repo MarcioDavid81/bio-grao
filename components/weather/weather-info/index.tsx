@@ -43,10 +43,10 @@ export default function WeatherInfo({
         <p className="text-4xl font-bold">{Math.round(weather.main.temp)}°C</p>
       </div>
       <p className="text-lg capitalize">{weather.weather[0].description}</p>
-      <div className="flex justify-around mt-4">
+      <div className="flex flex-col gap-2 sm:flex-row justify-around mt-4">
         <p>Sensação Térmica: {Math.round(weather.main.feels_like)}°C</p>
-        <p>Umidade: {weather.main.humidity}%</p>
-        <p>Vento: {weather.wind.speed} m/s</p>
+        <p>Umidade do Ar: {weather.main.humidity}%</p>
+        <p>Velocidade do Vento: {weather.wind.speed} m/s</p>
       </div>
     </div>
     <div className="p-4 bg-white shadow-md rounded-lg w-full sm:w-full text-center">
