@@ -49,9 +49,6 @@ export default function WeatherInfo({
         <p>Velocidade do Vento: {weather.wind.speed} m/s</p>
       </div>
     </div>
-    <div className="p-4 bg-white shadow-md rounded-lg w-full sm:w-full text-center">
-      <h2 className="text-xl font-bold">Previsão para os próximos 5 dias</h2>
-    </div>
     </>
   );
 }

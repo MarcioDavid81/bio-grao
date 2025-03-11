@@ -30,8 +30,8 @@ export default function Banner() {
     <section className=" container mx-auto px-4 py-12">
       <SectionTitle title="Sementes" subtitle="o que há de melhor" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
-        {cultivares.map((cultivar) => (
-          <div className="p-5 mx-auto sm:p-10 md:p-2 dark:bg-gray-100 dark:text-gray-800">
+        {cultivares.map((cultivar, index) => (
+          <div key={index} className="p-5 mx-auto sm:p-10 md:p-2 dark:bg-gray-100 dark:text-gray-800">
             <div className="flex flex-col max-w-3xl mx-auto overflow-hidden rounded">
               <img
                 src={cultivar.image}

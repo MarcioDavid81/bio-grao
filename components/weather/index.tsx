@@ -5,6 +5,7 @@ import React, { useEffect, useState } from "react";
 import WeatherInfo from "./weather-info";
 import SectionTitle from "../section-title";
 import { LoaderCircle } from "lucide-react";
+import WeatherFiveDays from "./weather-five-days";
 
 const cities = [
   { name: "Jari", value: "Jari" },
@@ -78,7 +79,7 @@ export default function Weather() {
           <>
             {error && <p className="text-red-500">{error}</p>}
             <WeatherInfo weather={weather} />
-            {/* <WeatherFiveDays weather5Days={weather5Days} /> */}
+            <WeatherFiveDays />
           </>
         )}
       </div>
