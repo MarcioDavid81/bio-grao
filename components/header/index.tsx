@@ -65,7 +65,7 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 bg-primary sm:bg-transparent transition-all duration-300
-        ${scrolled ? "md:bg-secondary md:shadow-md" : ""}`}
+        ${scrolled ? "md:bg-primary md:shadow-md" : ""}`}
     >
       <div className="container flex justify-between items-center">
         <Link href="/">
@@ -104,8 +104,8 @@ export default function Header() {
                 <a
                   href={page.url}
                   className={`${
-                    path === page.url ? "text-primary" : ""
-                  } hover:text-primary`}
+                    path === page.url ? "text-secondary" : ""
+                  } hover:text-secondary`}
                 >
                   {page.name}
                 </a>
