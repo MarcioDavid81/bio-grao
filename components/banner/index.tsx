@@ -3,6 +3,8 @@ import { Button } from "../ui/button";
 import SectionTitle from "../section-title";
 import Divider from "../divider";
 import { Section } from "lucide-react";
+import PriceTicker from "../price-ticker";
+import GetPrices from "../get-prices";
 
 const cultivares = [
   {
@@ -78,7 +80,12 @@ export default function Banner() {
         ))}
       </div>
       <Divider />
-      <SectionTitle title="Peças" subtitle="o que há de melhor" />
+      <SectionTitle title="Cotações" subtitle="acompanhe o mercado em tempo real" />
+      <div className="my-10">
+        <PriceTicker />
+        <GetPrices />
+      </div>
+      <Divider />
     </section>
   );
 }
